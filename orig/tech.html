@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Escape DEMO!</title>
+  <title>ESCAPE CODERHOUSE!</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,16 +24,16 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #FFFFFF;>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #000000;>
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="logo.jpg"</img>     <img src="frase.jpg"</img></a>
+      <a class="navbar-brand" href="#"><img src="logo.png"</img></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="pistas.html"  target="_blank">Pistas</a>
+            
           </li>
         </ul>
       </div>
@@ -80,7 +80,13 @@
     <label for="exampleInputEmail1">¿Seguro? (Recuerda escribir en mayúscula y sin tildes)</label>
     <input type="text" class="form-control" id="respuesta1" aria-describedby="emailHelp">
   </div>
-  <button type="submit" class="btn btn-danger">Comprobar</button>  <a type="button" href="pistas.html" class="btn btn-success" target="_blank">Pistas</a>
+  <button type="submit" class="btn btn-danger">Comprobar</button> <a type="button" href="#collapsePistas" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample" class="btn btn-success">Pistas</a>
+
+<div class="collapse" id="collapsePistas">
+  <div class="card card-body">
+    Dale, pensá un poco más! OPEN-MIND, ASOCIACIÓN! ... y sino pedile ayuda a tu Game Master!
+  </div>
+</div>
 </form>
 	</div>
 	
@@ -93,36 +99,15 @@
   <!-- Footer -->
   <footer class="py-5 bg" style="background-color: #000000;>
     <div class="container">
-      <p class="m-0 text-center text-white"><img src="footer.jpg"</img> <img src="escapemini.png"</img></p>
+      <p class="m-0 text-center text-white"> <img src="escapemini.png"</img></p>
 	  
     </div>
     <!-- /.container -->
   </footer>
   
-    <script>
-	function valida(f) {
-	  var ok = true;
-	  var msg = "¡Respuesta incorrecta!";
-		
-	  if(document.getElementById("respuesta1").value == "QUIERO GANAR")
-	  {
-		ok = true;
-	  }else{
-		ok = false;
-	  }
-
-	  if(ok==true)
-		location.href = "victoria.html";
-		f.preventDefault();
-	  
-	  if(ok == false)
-		alert(msg);
-	  
-	  
-	}
-	</script>
 
   <!-- Bootstrap core JavaScript -->
+  <script src="vv13.js"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   
